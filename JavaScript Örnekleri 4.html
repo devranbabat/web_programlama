@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gün ve Tarih Kaydetme Uygulaması</title>
+    <script>
+
+        function submit(){
+
+        var isim= document.getElementById("t1");
+        var gun= document.getElementById("t2");
+        var ay= document.getElementById("t3");
+        var yil= document.getElementById("t4");
+        alert("Başarıyla Kaydedildi");
+        }
+        function clr(){
+        document.getElementById("formid").reset();
+        }
+
+        <!-- listele fonksiyonunu çalıştıramadım ama program hata vermiyor,
+        sadece hafızasında tutmadığını söylüyor.-->
+
+        function listele(){
+        isim= this.isim;
+        gun=  this.gun;
+        ay= this.ay;
+        yil= this.yil;
+        document.writeln(isim);
+        document.writeln(gun);
+        document.writeln(ay);
+        document.writeln(yil);
+        }
+    </script>
+</head>
+<body>
+<form id="formid">
+    isim: <input type="text" id="t1" size="10"> <br>
+    tarih: <input type="text" id="t2" size="2"><input type="text" id="t3" size="2"><input type="text" id="t4" size="4">
+    <br>
+    <input type="submit" value="submit" onclick="submit()">
+    <input type="button" value="clear" onclick="clr()">
+    <br>
+    <input type="button" value="Listele" onclick="listele()">
+</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table,th,td{
+        border:1px solid black;
+        border-collapse:collapse;
+        }
+        th,td{
+        padding :10px;
+        }
+        table{
+        border-spacing:5px;
+        }
+
+    </style>
+</head>
+<body>
+<table style="width=100%">
+    <!-- colspan tablodaki yatak sütun seçme ( kendine ayıracağı) -->
+   <tr>
+        <th>isim</th>
+        <th colspan="3">Telefon</th>
+    </tr>
+    <tr>
+        <td>Ali</td>
+        <td>541</td>
+        <td>793</td>
+        <td>8287</td>
+    </tr>
+    <br>
+    <br>
+    <!--rowspan tabloda dikey yer seçme ( kendi için) -->
+     <tr>
+        <th>isim</th>
+         <td>Ali</td>
+     </tr>
+      <tr>
+        <th rowspan="3">Telefon</th>
+        <td>541</td>
+        <td>793</td>
+        <td>8287</td>
+      </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ortalama Hesaplama</title>
+    <script>
+        function hesap() {
+        var text1= document.getElementById("t1");
+        var text2= document.getElementById("t2").value;
+        var text3= document.getElementById("t3").value;
+        var text4= document.getElementById("t4");
+        var text5= document.getElementById("t5");
+        var text6= document.getElementById("t6");
+        var text7= document.getElementById("t7");
+        var num1=parseFloat(text2);
+        var num2=parseFloat(text3);
+        text7.value=(num1*0.4)+(num2*0.6);
+        text4.value=text1.value;
+        text5.value=text2;
+        text6.value=text3;
+        }
+        function clr(){
+        document.getElementById("tablo").reset();
+        }
+    </script>
+</head>
+<body>
+<form id="tablo">
+    isim: <input type="text" id="t1">
+    vize: <input type="text" id="t2">
+    final: <input type="text" id="t3">
+    <input  type="button" onclick="hesap()" value="Hesapla">
+    <input  type="button" onclick="clr()" value="Temizle">
+    <table border="7">
+        <tr>
+            <th>isim</th>
+            <th>vize</th>
+            <th>final</th>
+            <th>ortalama</th>
+        </tr>
+        <tr>
+            <td><input type="text"id="t4"></td>
+            <td><input type="text" id="t5"></td>
+            <td><input type="text" id="t6"></td>
+            <td><input type="text" id="t7"></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

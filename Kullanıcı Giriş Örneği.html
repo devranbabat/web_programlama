@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function giris(){
+            var kAdi ="admin";
+            var Sifre="admin";
+            if(kAdi==document.getElementById("sifre").value || Sifre== document.getElementById("sifre").value){
+                alert("Tebrikler Giriş Yapıldı");
+                }else{
+                    alert("Kullanıcı adı ve ya Şifre yanlış");
+                    }
+             }
+</script>
+</head>
+<body>
+<form>
+    Kullanıcı Adı: <input type="text" name="isim" id="isim">
+    <br> <br>
+    Şifre : <input type="password" name="şifre" id="sifre" >
+    <br> <br> <br>
+    <input type="checkbox" name="onay" id="onay" > Okudum ve Onaylıyorum.</input>
+    <br>
+    <input type="button" value="Giriş Yap" onclick="giris()">
+</form>
+</body>
+</html>
